@@ -1,6 +1,6 @@
 
 cmake_minimum_required(VERSION 3.20)
-project(mcbeDllInjector VERSION 1.1.0)
+project(StrengthInjector VERSION 1.1.0)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -8,7 +8,7 @@ set(wxBUILD_SHARED OFF CACHE BOOL "OFF for static library!" FORCE) # force wxWid
 mark_as_advanced(wxBUILD_SHARED)
 
 add_executable(${PROJECT_NAME} WIN32)
-set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "MCBE DLL Injector")
+set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "Strength")
 add_subdirectory(src)
 
 SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/level='requireAdministrator' /uiAccess='false'") # requireAdministrator
