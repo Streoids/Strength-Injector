@@ -3,7 +3,7 @@
 
 Config::Config() {
     this->path = Globals::WORKING_DIR;
-    this->path += "\\config.txt";
+    this->path += "\\strengthconfig.txt";
 }
 
 bool Config::serializeConfig() {
@@ -50,7 +50,7 @@ int Config::analyzeInt() {
 bool Config::updateConfigFile() const {
     std::wofstream cfgStream(this->path, std::ios::trunc);
     if (cfgStream.is_open()) {
-        cfgStream << L"# MCBE DLL injector config\n";
+        cfgStream << L"# Strength Injector config\n";
         cfgStream << (Globals::USE_CUSTOM_PROC_NAME ? L"useCustomProcName=true\n" : L"useCustomProcName=false\n");
         cfgStream << L"dllPath=" + Globals::DLL_PATH + '\n';
         cfgStream << L"procName=" + Globals::PROC_NAME + '\n';
