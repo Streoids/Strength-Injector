@@ -11,6 +11,6 @@ Minecraft Bedrock edition DLL injector that opens the game alongside
 -config is saved as strengthconfig.txt in the same location as Strength.exe
 -deleting it makes the DLL path reset.
 
-###Watch this video to see what i said above [Watch](https://youtu.be/uyH6XSA38Ro?si=ueQ5jPOL8tgzEmLw)
+### Watch this video to see what i said above [Watch](https://youtu.be/uyH6XSA38Ro?si=ueQ5jPOL8tgzEmLw)
 
 #### This project uses [wxWidgets](https://wxwidgets.org).
